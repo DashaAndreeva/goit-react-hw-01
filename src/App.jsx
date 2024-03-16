@@ -9,7 +9,7 @@ import "./App.css";
 export default function App() {
   return (
     <>
-      <p>Task 1</p>
+      <p className="title">Task 1</p>
       <Profile
         name={userData.username}
         tag={userData.tag}
@@ -17,9 +17,9 @@ export default function App() {
         image={userData.avatar}
         stats={userData.stats}
       />
-      <p>Task 2</p>
+      <p className="title">Task 2</p>
       <FriendList friends={friends} />
-      <p>Task 3</p>
+      <p className="title">Task 3</p>
       <TransactionHistory items={transactions} />
     </>
   );
